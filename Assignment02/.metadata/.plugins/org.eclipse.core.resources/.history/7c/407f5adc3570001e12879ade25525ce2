@@ -1,0 +1,35 @@
+package tester;
+
+import java.util.Scanner;
+
+import com.app.geometry.Point2D;
+
+public class TestPoint {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Point2D p1 = new Point2D();
+		Point2D p2 = new Point2D();
+		
+		System.out.println("Enter the cordinates of Point p1 : ");
+		p1.setX(sc.nextInt());
+		p1.setY(sc.nextInt());
+		
+		System.out.println("Enter the cordinates of Point p2 : ");
+		p2.setX(sc.nextInt());
+		p2.setY(sc.nextInt());
+		
+		if(p1.isEqual(p2))
+		{
+			double distance = p1.calculateDistance(p2);
+		}
+		else
+		{
+			System.out.println("P1 and P2 lies on same point distance = 0");
+		}
+		
+		
+		
+	}
+
+}
