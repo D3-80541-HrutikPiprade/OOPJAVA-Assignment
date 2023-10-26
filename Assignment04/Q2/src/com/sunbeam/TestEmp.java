@@ -15,6 +15,9 @@ public class TestEmp {
 			if(e instanceof BasePlusCommissionEmployee)
 			{
 				BasePlusCommissionEmployee emp = (BasePlusCommissionEmployee)e;
+				emp.TotalAmt();
+				
+				emp.setBaseSalary(1.1 * emp.getBaseSalary());
 				 emp.TotalAmt();
 			}
 		}

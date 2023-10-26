@@ -15,6 +15,12 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
 		
 		System.out.println("Total Amount = "+ ((super.getCommissionRate()/100)* super.getGrossSales() + baseSalary));
 	}
+	public void setBaseSalary(double baseSalary) {
+		this.baseSalary = baseSalary;
+	}
+	public double getBaseSalary() {
+		return baseSalary;
+	}
 	
 
 	
