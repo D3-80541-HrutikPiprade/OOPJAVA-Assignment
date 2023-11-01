@@ -1,0 +1,5 @@
+package com.sunbeam;
+
+public enum Menu {
+	EXIT,ADD_BOOK,DISPLAY_ALL,DELETE_BY_ID,SEARCH_ISBN,DISPLAY_NOS,DELETE_ALL
+}
