@@ -21,7 +21,7 @@ public class TestComparator {
 		System.out.println("Before Sort : ");
 		System.out.println(Arrays.toString(arr));
 		System.out.println("After Sort : ");
-		Arrays.sort(arr, new SortArrayComparator());
+		selectionSort(arr, new SortArrayComparator());
 		System.out.println(Arrays.toString(arr));
 	}
 
