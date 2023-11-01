@@ -2,7 +2,7 @@ package com.sunbeam;
 
 public class Test {
 	
-	public static void printDisplayableBox(Box<?> b ) {
+	public static void printDisplayableBox(Box<? extends Displayable> b ) {
 		b.get().display();
 	}
 	public static void printAnyBox(Box<?> b) {
@@ -17,12 +17,17 @@ public class Test {
 		Box<Book> b2 = new Box<>();
 		b2.set(new Book("Atlas",700.21));
 		
+		Box<Car> b3 = new Box<>();
+		b3.set(new Car("Nano",200000));
+		
 		System.out.println();
 		printDisplayableBox(b1);
 		printAnyBox(b1);
 		System.out.println();
 		printDisplayableBox(b2);
 		printAnyBox(b2);
+		
+		printAnyBox(b3);
 		
 	}
 

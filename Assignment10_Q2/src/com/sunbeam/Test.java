@@ -1,14 +1,14 @@
 package com.sunbeam;
 
 public class Test {
-	public static <T extends Number> double  findMin(T[] arr)
+	public static <T extends Number> T  findMin(T[] arr)
 	{
-		Double  min= arr[0].doubleValue();
+		T  min= arr[0];
 		for(T ele : arr)
 		{
-			if(ele.doubleValue() < min)
+			if(ele.doubleValue() < min.doubleValue())
 			{
-				min= ele.doubleValue();
+				min= ele;
 			}
 		}
 		return min;
