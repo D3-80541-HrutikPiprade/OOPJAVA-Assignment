@@ -61,23 +61,6 @@ public class Book implements Comparable<Book>{
 		return builder.toString();
 	}
 	
-	
-	
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(isbn);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (!(obj instanceof Book))
-			return false;
-		Book other = (Book) obj;
-		return Objects.equals(isbn, other.isbn);
-	}
 
 	public void accept() {
 		Scanner sc = new Scanner(System.in);
