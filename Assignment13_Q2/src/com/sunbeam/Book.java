@@ -64,10 +64,10 @@ public class Book{
 	
 	
 
-//	@Override
-//	public int hashCode() {
-//		return Objects.hash(isbn);
-//	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(isbn);
+	}
 
 	@Override
 	public boolean equals(Object obj) {
