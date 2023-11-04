@@ -1,0 +1,10 @@
+package com.sunbeam;
+
+public enum EMenu {
+	EXIT,
+	INSERT_USER,
+	DISPLAY_ALL_USER,
+	DELETE_VOTER,
+	CHANGE_STATUS_TRUE_BY_ID,
+	CHANGE_NAME_DOB_OF_VOTER
+}
